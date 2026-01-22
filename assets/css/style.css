@@ -778,8 +778,22 @@ footer .footer-logo p {
 .header-creative {
   padding: 150px 0 80px;
   position: relative;
+  overflow: hidden;
 }
-.header-creative:after {
+
+.header-creative .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.15;
+  z-index: -2;
+}
+
+/* .header-creative:after {
   content: '';
   width: 30vw;
   height: 30vw;
@@ -789,12 +803,14 @@ footer .footer-logo p {
   top: -10vw;
   left: -10vw;
   z-index: -1;
-}
+} */
+
 .header-creative .caption h1 {
   font-size: 120px;
   line-height: 1.2;
   font-weight: 800;
 }
+
 .header-creative .caption .gradient-text {
   color: transparent;
   background: linear-gradient(to right, #00ffc3ac, #2a68abea);
@@ -802,10 +818,12 @@ footer .footer-logo p {
   -webkit-background-clip: text;
   height: 150px;
 }
+
 .header-creative .caption h1 .icon {
   position: relative;
   padding-left: 120px;
 }
+
 .header-creative .caption h1 .icon img {
   position: absolute;
   left: 0;
@@ -815,10 +833,12 @@ footer .footer-logo p {
   transform: translateY(-50%);
   width: 80px;
 }
+
 .header-creative .caption h1 .arrow {
   position: relative;
   padding-left: 150px;
 }
+
 .header-creative .caption h1 .arrow img {
   position: absolute;
   left: 0;
@@ -828,13 +848,26 @@ footer .footer-logo p {
   transform: translateY(-50%);
   width: 120px;
 }
+
 .header-creative .right-column {
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
   gap: 25px;
+  margin-left: auto;
+  padding-left: 60px;
 }
+
+#service-button.butn-circle {
+  width: 140px;
+  height: 140px;
+}
+
+.description-text {
+  margin-left: 100px;
+}
+
 .page-header .caption h1 {
   font-size: 140px;
   font-weight: 800;
@@ -1266,4 +1299,143 @@ footer .footer-logo p {
 .founder-title{ 
   color: #5e5e5e;
   font-size: 20px;
+}
+
+/* Responsive Navbar Styles */
+.navbar {
+  background-color: #000;
+}
+
+.navbar-black {
+  background-color: #000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-desktop {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-mobile-wrapper {
+  display: none;
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  gap: 6px;
+  padding: 0;
+}
+
+.navbar-toggle span {
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.navbar-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.navbar-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.navbar-mobile-menu {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 15px;
+}
+
+.navbar-company-mobile {
+  display: none;
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+/* Tablet and Mobile Styles */
+@media (max-width: 1024px) {
+  .navbar-desktop {
+    display: none;
+  }
+
+  .navbar-mobile-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar-mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #141414;
+    padding: 20px 15px;
+    border-top: 1px solid #333;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .navbar-mobile-menu.active {
+    display: flex;
+    max-height: 500px;
+  }
+
+  .navbar-company-mobile {
+    display: block;
+    background: #141414;
+    border-top: 1px solid #333;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    position: relative;
+  }
+
+  .container-xl {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .navbar-logo {
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-logo {
+    height: 50px;
+  }
+
+  .fz-14 {
+    font-size: 12px;
+  }
+
+  .navbar-company-mobile .fz-14 {
+    font-size: 12px;
+  }
 }
