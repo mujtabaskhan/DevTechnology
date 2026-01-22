@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="keywords"
+    content="DevTechnology, Creative Agency, Digital Services, SEO, Web Development, Digital Marketing, UI/UX" />
+  <meta name="description"
+    content="DevTechnology is a leading creative digital agency offering SEO, content creation, digital marketing, web development, mobile app development, and UI/UX design services." />
+  <meta name="author" content="DevTechnology" />
+  <meta property="og:title" content="DevTechnology - Shaping Digital Journeys" />
+  <meta property="og:description"
+    content="DevTechnology offers top-notch digital solutions including SEO, web development, and digital marketing." />
+  <meta property="og:image" content="https://www.DevTechnology.com/assets/imgs/social-image.jpg" />
+  <meta property="og:url" content="https://www.DevTechnology.com" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DevTechnology - Creative Digital Agency" />
+  <meta name="twitter:description"
+    content="DevTechnology offers top-notch digital solutions including SEO, web development, and digital marketing." />
+  <meta name="twitter:image" content="https://www.DevTechnology.com/assets/imgs/social-image.jpg" />
+  <title>DevTechnology - Our Team</title>
+  <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets//favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-chrome-192x192.png" />
+  <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/plugins.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    /* Added teams section styles */
+    .teams-section {
+      background-color: #000;
+      padding: 80px 0;
+    }
+
+    .founder-section {
+      background-color: #fff;
+      padding: 80px 0;
+      margin-bottom: 0;
+    }
+
+    .founder-content {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .founder-image {
+      flex: 0 0 300px;
+    }
+
+    .founder-image img {
+      width: 100%;
+      height: 350px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .founder-message {
+      flex: 1;
+    }
+
+    .founder-message h3 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 20px;
+    }
+
+    .founder-message p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .founder-title {
+      font-size: 14px;
+      color: #999;
+      margin-top: 20px;
+      font-weight: 500;
+    }
+
+    .team-members-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+      margin-top: 60px;
+    }
+
+    .team-member-card {
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .team-member-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .team-member-image {
+      width: 100%;
+      height: 280px;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .team-member-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .team-member-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .team-member-designation {
+      font-size: 14px;
+      color: #aaa;
+      font-weight: 400;
+    }
+
+    .teams-section h2 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    @media (max-width: 768px) {
+      .founder-content {
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .founder-image {
+        flex: 0 0 100%;
+      }
+
+      .team-members-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 30px;
+      }
+
+      .teams-section {
+        padding: 60px 0;
+      }
+
+      .founder-section {
+        padding: 60px 0;
+      }
+
+      .teams-section h2 {
+        font-size: 28px;
+      }
+
+      .founder-message h3 {
+        font-size: 22px;
+      }
+    }
+  </style>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KJF4CV62');
+  </script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6RQN6XWHG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q6RQN6XWHG');
+</script>
+
+<body>
+  <div class="cursor"></div>
+
+  <div class="progress-wrap cursor-pointer">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+
+  <nav class="navbar">
+    <div class="container-xl">
+      <a class="text-white text-center d-flex align-items-center" href="/"> 
+        <img src="/assets/imgs/logo.jpeg" alt="DevTechnology Logo" class="navbar-logo" style="height: 60px; margin-right: 10px;">
+        
+      </a>
+      <div class="contact-button d-flex align-items-center">
+        <div class="butn butn-md butn-bg bg-blck" id="contact-button" style="cursor: pointer;">
+          <span class="text text-center">Our Team</span>
+        </div>
+        <span class="text-white ml-20 fz-14">15788625 CANADA INC</span>
+      </div>
+    </div>
+  </nav>
+
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <main>
+        <header class="about-header">
+          <div class="container-xl">
+            <div class="row d-flex justify-content-center align-items-center gap-4">
+              <h1 class="text-white text-center">
+                Crafted <span class="text-gradient"> With </span> Purpose
+              </h1>
+              <p>
+                Driven by passion and innovation, our team is dedicated to
+                creating impactful digital experiences. We focus on crafting
+                solutions that empower clients and elevate brands, with every
+                project reflecting our commitment to quality, creativity, and
+                collaboration. Discover the vision that propels us forward.
+              </p>
+            </div>
+          </div>
+        </header>
+
+        <section class="bg-whte about-vision-padding">
+          <div class="container-xl position-re">
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="cont">
+                  <h2 class="js-splittext-lines">Our Vision</h2>
+                </div>
+              </div>
+              <div class="col-lg-2 d-flex justify-content-end align-items-end">
+                <div class="wow wow1 zoomIn" data-wow-delay="0.4s">
+                  <img src="assets/imgs/vector-img/vector-black.svg" alt="" />
+                </div>
+              </div>
+
+              <div class="text mt-30">
+                <p>
+                  To redefine the digital experience by seamlessly integrating
+                  cutting-edge technology and unparalleled creativity. We
+                  aspire to empower businesses of all sizes, helping them
+                  achieve their fullest potential by fostering innovation,
+                  collaboration, and impactful digital transformation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-whte about-mission-padding">
+          <div class="container-xl position-re">
+            <div class="row">
+              <div class="col-lg-2 d-flex justify-content-end align-items-end">
+                <div class="wow wow1 zoomIn" data-wow-delay="0.4s">
+                  <img src="assets/imgs/vector-img/vector-black.svg" alt="" />
+                </div>
+              </div>
+
+              <div class="col-lg-10">
+                <div class="mission cont">
+                  <h2 class="js-splittext-lines">Our Mission</h2>
+                </div>
+              </div>
+
+              <div class="text mt-30">
+                <p class="text-right">
+                  Our mission is to transform visionary ideas into impactful
+                  digital realities. We achieve this by providing expert
+                  guidance and customized solutions that cater to the specific
+                  goals of our clients. Through a commitment to excellence, we
+                  ensure that every project we undertake not only meets but
+                  exceeds expectations, ultimately elevating our clients'
+                  brands in the competitive digital landscape.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="services-section" class="about-services services-modern services-modern bg-blck">
+          <div class="container-xl section-padding position-re">
+            <div class="sec-head mb-40">
+              <div class="row">
+                <div class="col-lg-10">
+                  <h2 class="fw-700 js-splittext-lines">Our Core Values</h2>
+                </div>
+
+                <div class="icon-img-120 icon mb-80 icon-grid-bars">
+                  <img src="assets/imgs/vector-img/plus-light.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="d-flex flex-column gap-3">
+                <div class="d-flex flex-md-row gap-3 flex-column">
+                  <div class="item">
+                    <div class="cont">
+                      <span>
+                        <i class="fa-solid fa-people-robbery"></i>
+                      </span>
+                      <h5>People First</h5>
+                      <p>
+                        At DevTechnology, we believe in our people. We support their
+                        growth, help them develop new skills, and ensure they
+                        are satisfied at work.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="cont">
+                      <svg width="76" height="58" viewBox="0 0 76 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M25.2089 47.6121C26.9879 47.6121 28.7549 47.6128 30.5101 47.6143C36.7949 47.6172 42.7319 47.6216 48.7798 47.5798C49.5544 47.5588 50.3071 47.3185 50.9501 46.8869C56.8702 42.7386 62.8263 38.4792 68.5862 34.3598C69.0024 34.0621 69.4237 33.7688 69.8449 33.4756C71.1914 32.5804 72.4795 31.6009 73.7015 30.5428C74.6246 29.7144 75.308 28.6539 75.6804 27.472C76.0529 26.2902 76.1007 25.0302 75.819 23.8236C75.5473 22.5794 74.9461 21.4309 74.078 20.4977C73.21 19.5645 72.1069 18.881 70.884 18.5183C68.5844 17.8192 66.3887 18.221 64.1746 19.7467C61.338 21.701 58.4349 23.6766 55.6273 25.5869L52.0671 28.0111L51.8761 28.1413L51.7384 27.958C50.1957 25.8871 48.1242 24.9805 45.2211 25.1022C43.523 25.1756 41.7957 25.1451 40.1252 25.1173L39.3788 25.1052C38.8896 25.1353 38.4031 25.0127 37.9868 24.7543C34.1383 21.6303 29.5596 21.5782 26.0001 21.8814C21.9294 22.2282 18.886 23.6553 16.6961 26.2438C16.3402 26.6647 15.9689 27.0734 15.5759 27.5056C15.3871 27.7131 15.1928 27.9272 14.9915 28.1516L14.7678 28.4016L13.2157 25.6521L0 32.5411L12.9982 57.3821L26.2208 50.4792L24.8284 47.6157L25.2089 47.6121ZM14.6929 51.9628L5.42089 34.2395L11.5463 31.0344L20.8297 48.7676L14.6929 51.9628ZM23.8948 43.6353C23.5163 43.6761 23.135 43.5923 22.8087 43.3966C22.4825 43.2009 22.2294 42.904 22.0881 42.5513C20.6747 39.7505 19.1177 36.7756 17.1876 33.1885C16.7957 32.4608 16.6976 31.8281 17.4917 31.1063C17.967 30.6744 18.4254 30.2012 18.8687 29.7433C20.2674 28.2993 21.7134 26.8062 23.9465 26.305C27.3371 25.5444 30.1366 25.5876 32.758 26.4421C33.7787 26.775 34.8916 27.2197 35.4077 27.9924C36.1342 29.0801 36.9624 29.1465 38.2414 29.1289C40.7136 29.0922 43.2281 29.1065 45.6607 29.1208H45.8723C46.2779 29.0975 46.684 29.1552 47.0669 29.2906C47.4498 29.426 47.8018 29.6364 48.1021 29.9094C48.2951 30.1106 48.4451 30.3489 48.543 30.6098C48.6409 30.8707 48.6846 31.1488 48.6714 31.427C48.6391 32.8117 47.6621 33.5804 45.9204 33.5921C43.263 33.6094 40.5616 33.6072 37.9501 33.6039L34.7061 33.602H33.253C31.1654 33.6004 28.9969 33.5988 27.4127 33.7129C26.6223 33.7736 25.9089 34.1301 25.4232 34.7035C24.2937 36.0397 23.5539 38.0201 23.8948 43.6353ZM39.4071 11.824H39.5324C40.6108 11.824 41.1397 12.2272 41.5253 13.3245C43.0808 17.7455 47.7444 20.363 52.6122 19.5462C57.1185 18.7911 60.5277 14.6515 60.5421 9.91735C60.5571 4.9361 57.1629 0.998906 52.0909 0.120186C47.748 -0.63316 43 2.23395 41.5059 6.50915C41.1536 7.51544 40.6526 7.86553 39.604 7.8637C34.5493 7.83327 29.4097 7.83694 24.4391 7.84024C22.8169 7.84024 21.1947 7.84097 19.5724 7.84244H18.2402V14.6376H22.1957V11.9483H26.5801V15.546H30.5972V11.8489H30.8374C31.7086 11.8489 32.5611 11.8533 33.4007 11.8574C35.4734 11.8676 37.4348 11.8771 39.4071 11.824ZM50.71 4.03392C51.8618 4.04733 52.9842 4.39881 53.9373 5.04452C54.8904 5.69024 55.632 6.60165 56.0696 7.66514C56.5073 8.72863 56.6217 9.89717 56.3986 11.0251C56.1755 12.153 55.6246 13.1905 54.8148 14.0081C54.2781 14.5504 53.6386 14.9805 52.9335 15.2733C52.2283 15.566 51.4718 15.7156 50.7081 15.7132H50.7055C49.1596 15.7067 47.6791 15.0892 46.5883 13.9958C45.4974 12.9024 44.885 11.4222 44.885 9.87922C44.9018 8.3391 45.5201 6.86633 46.6086 5.77449C47.697 4.68266 49.1695 4.05801 50.7125 4.03355L50.71 4.03392Z"
+                          fill="#ffffff"></path>
+                        <path
+                          d="M39.4071 11.824H39.5324C40.6108 11.824 41.1397 12.2272 41.5253 13.3245C43.0808 17.7455 47.7444 20.363 52.6122 19.5462C57.1185 18.7911 60.5277 14.6515 60.5421 9.91735C60.5571 4.9361 57.1629 0.998906 52.0909 0.120186C47.748 -0.63316 43 2.23395 41.5059 6.50915C41.1536 7.51544 40.6526 7.86553 39.604 7.8637C34.5493 7.83327 29.4097 7.83694 24.4391 7.84024C22.8169 7.84024 21.1947 7.84097 19.5724 7.84244H18.2402V14.6376H22.1957V11.9483H26.5801V15.546H30.5972V11.8489H30.8374C31.7086 11.8489 32.5611 11.8533 33.4007 11.8574C35.4734 11.8676 37.4348 11.8771 39.4071 11.824ZM50.71 4.03392C51.8618 4.04733 52.9842 4.39881 53.9373 5.04452C54.8904 5.69024 55.632 6.60165 56.0696 7.66514C56.5073 8.72863 56.6217 9.89717 56.3986 11.0251C56.1755 12.153 55.6246 13.1905 54.8148 14.0081C54.2781 14.5504 53.6386 14.9805 52.9335 15.2733C52.2283 15.566 51.4718 15.7156 50.7081 15.7132H50.7055C49.1596 15.7067 47.6791 15.0892 46.5883 13.9958C45.4974 12.9024 44.885 11.4222 44.885 9.87922C44.9018 8.3391 45.5201 6.86633 46.6086 5.77449C47.697 4.68266 49.1695 4.05801 50.7125 4.03355L50.71 4.03392Z"
+                          fill="#ffffff"></path>
+                      </svg>
+
+                      <h5>Empower Yourself</h5>
+                      <p>
+                        Our organization champions a culture of
+                        self-responsibility, giving individuals the courage
+                        and freedom to make a difference.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-md-row gap-3 flex-column">
+                  <div class="item">
+                    <div class="cont">
+                      <span>
+                        <i class="fa-solid fa-handshake"></i>
+                      </span>
+                      <h5>Value Each Perspective</h5>
+                      <p>
+                        By embracing empathy, we create a workplace where
+                        everyone feels heard, respected, and valued.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="cont">
+                      <span>
+                        <i class="fa-solid fa-hands-holding-circle"></i>
+                      </span>
+                      <h5>Fulfill Your Commitments</h5>
+                      <p>
+                        We understand that trust is vital in all our
+                        interactions, and we take pride in delivering results
+                        with excellence, precision, and honesty.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-md-row gap-3 flex-column">
+                  <div class="item">
+                    <div class="cont">
+                      <span>
+                        <i class="fa-solid fa-lightbulb"></i>
+                      </span>
+                      <h5>Drive Innovation</h5>
+                      <p>
+                        We focus on identifying and using the most advanced
+                        technology to deliver improved and more effective
+                        solutions, ensuring our clients maintain a significant
+                        competitive advantage.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="cont">
+                      <span> <i class="fa-solid fa-heart"></i></span>
+                      <h5>Creating Value for Clients</h5>
+                      <p>
+                        At DevTechnology, we understand that true success lies not
+                        in the code itself but in delivering solutions that
+                        drive business value for our clients and their
+                        prospective customers.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Added Meet Our Founder and Team Members sections -->
+        <section class="founder-section">
+          <div class="container-xl">
+            <div class="founder-content">
+              <div class="founder-image">
+                <img src="assets/imgs/team/aisha.jpeg" alt="Founder & CEO" />
+              </div>
+              <div class="founder-message">
+                <h3>Meet Our CEO</h3>
+                <p>
+                  When I founded DevTechnology, it was driven by a clear belief: that meaningful digital growth begins with
+                  clarity, trust, and the right technology. DevTechnology is more than just a digital agency—it represents our
+                  commitment to honest collaboration, thoughtful strategy, and solutions that truly serve our clients’
+                  goals.
+
+
+                </p>
+                <p>
+                  I believe businesses deserve more than just websites, apps, or campaigns. They deserve a partner who
+                  understands their vision, communicates transparently, and simplifies the digital journey. Our mission
+                  is to remove complexity from technology and marketing so our clients can focus on what matters
+                  most—building and growing their brands. At DevTechnology, we are guided by innovation, integrity, and
+                  impact, ensuring every solution we deliver is purposeful, scalable, and built to create long-term
+                  value. We don’t just build digital products; we help shape stronger futures.
+
+                </p>
+                <div class="founder-title">
+                  <strong> — AISHA</strong><br />
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="teams-section">
+          <div class="container-xl">
+            <h2>Meet Our Talented Team</h2>
+            <div class="team-members-grid">
+              <div class="team-member-card">
+                <div class="team-member-image">
+                  <img src="assets/imgs/team/1.jpg" alt="Fatima" />
+                </div>
+                <div class="team-member-name">Fatima Al-Khalidi</div>
+                <div class="team-member-designation">CTO</div>
+              </div>
+
+              <div class="team-member-card">
+                <div class="team-member-image">
+                  <img src="assets/imgs/team/2.jpeg" alt="Haider" />
+                </div>
+                <div class="team-member-name">Haider Jahangir</div>
+                <div class="team-member-designation">Senior Developer</div>
+              </div>
+
+              <div class="team-member-card">
+                <div class="team-member-image">
+                  <img src="assets/imgs/team/3.jpeg" alt="Ahmed" />
+                </div>
+                <div class="team-member-name">Ahmed Ali</div>
+                <div class="team-member-designation">Project Manager</div>
+              </div>
+
+
+              <div class="team-member-card">
+                <div class="team-member-image">
+                  <img src="assets/imgs/team/6.png" alt="Mujtaba" />
+                </div>
+                <div class="team-member-name">Mujtaba Khan</div>
+                <div class="team-member-designation">CTO</div>
+              </div>
+
+              <div class="team-member-card">
+                <div class="team-member-image">
+                  <img src="assets/imgs/team/4.jpeg" alt="Jamil Habib" />
+                </div>
+                <div class="team-member-name">Jamil Habib</div>
+                <div class="team-member-designation">UX/UI Specialist</div>
+              </div>
+
+              <div class="team-member-card">
+                <div class="team-member-image">
+                  <img src="assets/imgs/team/7.avif" alt="Jasmine Martinez" />
+                </div>
+                <div class="team-member-name">Jasmine Martinez</div>
+                <div class="team-member-designation">Full Stack Developer</div>
+              </div>
+
+              <div class="team-member-card">
+                <div class="team-member-image">
+                  <img src="assets/imgs/team/8.jpeg" alt="Anousha Ayaz" />
+                </div>
+                <div class="team-member-name">Anousha Ayaz</div>
+                <div class="team-member-designation">Marketing Manager</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+        <section id="services-section" class="difference-services services-modern services-modern bg-whte">
+          <div class="container-xl section-padding position-re">
+            <div class="sec-head mb-40">
+              <div class="row">
+                <div class="col-lg-12">
+                  <h2 class="fw-700 js-splittext-lines text-center">
+                    Key Differences
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="d-flex flex-column gap-3">
+                <div class="d-flex flex-wrap gap-3 flex-md-nowrap">
+                  <div class="item">
+                    <div class="cont">
+                      <span>
+                        <i class="fa-solid fa-medal"></i>
+                      </span>
+                      <h5>Tailored Expertise</h5>
+                      <p>
+                        We build teams based on your product needs, ensuring
+                        the right experts are assigned to your project.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="cont">
+                      <span>
+                        <i class="fa-solid fa-shield-halved"></i>
+                      </span>
+
+                      <h5>Strong IP Protection</h5>
+                      <p>
+                        Projects are completed under 'Work for Hire' terms and
+                        NDAs. Our protocols ensure the protection of
+                        confidential information.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="cont">
+                      <span>
+                        <i class="fa-solid fa-diagram-project"></i>
+                      </span>
+                      <h5>Specialized Industry Insight</h5>
+                      <p>
+                        With extensive experience across business sectors,
+                        technical expertise, and insight into current trends,
+                        we deliver exceptional results.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-flex flex-wrap gap-3 flex-md-nowrap">
+                  <div class="item">
+                    <div class="cont">
+                      <span>
+                        <i class="fa-solid fa-meteor"></i>
+                      </span>
+                      <h5>Quick Turnaround</h5>
+                      <p>
+                        Skip the lengthy recruitment process— we're ready to
+                        jump into action as soon as you are.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="cont">
+                      <span>
+                        <i class="fa-solid fa-ranking-star"></i>
+                      </span>
+                      <h5>Assured Quality</h5>
+                      <p>
+                        Our in-house QA teams review the implementation
+                        against the requirements, ensuring everything meets
+                        the highest standards.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="cont">
+                      <span>
+                        <i class="fa-solid fa-code"></i>
+                      </span>
+                      <h5>Stress-Free Development</h5>
+                      <p>
+                        We follow a standardized development process based on
+                        industry best practices and insights gained from our
+                        projects.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+        <section class="contact section-padding bg-whte" id="contact-section">
+          <div class="container-xl">
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="info md-mb80">
+                  <div class="sec-head mb-40">
+                    <h3 class="fw-700 text-black">
+                      Kickstart and elevate your business today!
+                    </h3>
+                    <p class="fz-22 fw-300 mt-15 text-black">
+                      Reach out to us and take the first step toward growing
+                      your business. We're here to help!
+                    </p>
+                  </div>
+                  <div class="list-arrow">
+                    <ul class="rest">
+                      <li class="mb-15">
+                        <img src="./assets/imgs/email.png" class="icon" alt="email" />support@devtechnology.ca
+                      </li>
+                      <li>
+                        <img src="./assets/imgs/address.png" class="icon" alt="address" />
+                        81 Zenway Blvd, Woodbridge,
+                        ON L4H 0S5, Canada
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <form id="contact-form">
+                  <div class="controls row">
+                    <div class="col-lg-6">
+                      <div class="form-group mb-30">
+                        <label for="">Name</label>
+                        <input id="name" type="text" name="name" placeholder="John Doe" required="required" />
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="form-group mb-30">
+                        <label for="">Email</label>
+                        <input id="email" type="email" name="email" placeholder="support@devtechnology.ca"
+                          required="required" />
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="">Message</label>
+                        <textarea id="message" name="message" placeholder="Can we have a meeting?" rows="4"
+                          required="required"></textarea>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mt-50">
+                    <button id="submit-btn" type="submit"
+                      class="d-flex align-items-center butn butn-md butn-bg bg-blck">
+                      <span id="btn-text" class="text">Submit Message</span>
+                      <i id="loader" class="fas fa-spinner fa-spin" style="display: none"></i>
+                      <svg id="arrow-svg" xmlns="http://www.w3.org/2000/svg" width="37" height="36" viewBox="0 0 37 36"
+                        fill="none">
+                        <path d="M1 35L34.2929 1.70711C34.9229 1.07714 36 1.52331 36 2.41421V21.5H29.5" stroke="#fff"
+                          stroke-width="2"></path>
+                      </svg>
+                    </button>
+
+                    <div id="loader" class="loader" style="display: none"></div>
+                    <div id="success-msg" class="success-msg" style="display: none">
+                      Message Sent
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="sub-footer pt-20 pb-20">
+          <div class="container-xl text-center">
+            <div class="row">
+              <div class="col-lg-12 inner-footer">
+                <div class="footer-logo col-lg-8">
+                  <p>DevTechnology.</p>
+                </div>
+                <div class="text col-lg-4">
+                  <p class="fz-14 text-white copyright-text">
+                    © 2025 DevTechnology. All Rights Reserved.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/jquery-migrate-3.4.0.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollSmoother.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/SplitText.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script>
+    document.getElementById('contact-button').addEventListener('click', function () {
+      window.location.href = 'team.html';
+    });
+
+    document.getElementById('service-button').addEventListener('click', function () {
+      const contactSection = document.getElementById('services-section');
+      const yOffset = -80;
+      const y = contactSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    });
+  </script>
+</body>
+
+</html>
