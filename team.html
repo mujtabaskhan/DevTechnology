@@ -213,18 +213,36 @@
     </svg>
   </div>
 
- <nav class="navbar">
-    <div class="container-xl">
+ <nav class="navbar navbar-black">
+    <div class="container-xl navbar-container">
       <a class="text-white text-center d-flex align-items-center" href="/">
         <img src="/assets/imgs/log-removebg-preview.png" alt="DevTechnology Logo" class="navbar-logo"
           style="height: 80px; margin-right: 10px;">
-
       </a>
-      <div class="contact-button d-flex align-items-center">
-        <div class="butn butn-md butn-bg bg-blck" id="contact-button" style="cursor: pointer;">
+      
+      <!-- Desktop Navigation -->
+      <div class="navbar-desktop d-flex align-items-center">
+        <span class="text-white fz-14 company-text">15788625 CANADA INC</span>
+        <div class="butn butn-md butn-bg bg-blck" id="contact-button" style="cursor: pointer; margin-left: 20px;">
           <span class="text text-center">Our Team</span>
         </div>
-        <span class="text-white ml-20 fz-14">15788625 CANADA INC</span>
+      </div>
+
+      <!-- Mobile/Tablet Navigation -->
+      <div class="navbar-mobile-wrapper">
+        <button class="navbar-toggle" id="navbar-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="navbar-mobile-menu" id="navbar-mobile-menu">
+        <span class="text-white fz-14 company-text">15788625 CANADA INC</span>
+        <div class="butn butn-md butn-bg bg-blck" id="contact-button-mobile" style="cursor: pointer;">
+          <span class="text text-center">Our Team</span>
+        </div>
       </div>
     </div>
   </nav>
@@ -742,8 +760,41 @@
   <script src="assets/js/SplitText.min.js"></script>
   <script src="assets/js/scripts.js"></script>
   <script>
-    document.getElementById('contact-button').addEventListener('click', function () {
-      window.location.href = 'team.html';
+    // Navbar Toggle Functionality
+    const navbarToggle = document.getElementById('navbar-toggle');
+    const navbarMobileMenu = document.getElementById('navbar-mobile-menu');
+    const contactButtonMobile = document.getElementById('contact-button-mobile');
+    const contactButtonDesktop = document.getElementById('contact-button');
+
+    if (navbarToggle) {
+      navbarToggle.addEventListener('click', function() {
+        navbarToggle.classList.toggle('active');
+        navbarMobileMenu.classList.toggle('active');
+      });
+    }
+
+    if (contactButtonMobile) {
+      contactButtonMobile.addEventListener('click', function() {
+        navbarToggle.classList.remove('active');
+        navbarMobileMenu.classList.remove('active');
+        window.location.href = '/team.html';
+      });
+    }
+
+    if (contactButtonDesktop) {
+      contactButtonDesktop.addEventListener('click', function() {
+        window.location.href = '/team.html';
+      });
+    }
+
+    document.addEventListener('click', function(event) {
+      const navbar = document.querySelector('.navbar');
+      if (navbar && !navbar.contains(event.target)) {
+        if (navbarToggle) {
+          navbarToggle.classList.remove('active');
+          navbarMobileMenu.classList.remove('active');
+        }
+      }
     });
 
     document.getElementById('service-button').addEventListener('click', function () {
